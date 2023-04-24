@@ -1,0 +1,15 @@
+{
+    "head": 
+        {
+            "pricebook": "GC-200",
+            "currency": "USD",
+            "catalog": "storefront-catalog-en"
+        }
+    ,
+    "items": [
+        {
+            "product_id": "PGC",
+            "value": 200
+        }
+    ]
+}
