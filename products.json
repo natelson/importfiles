@@ -1,0 +1,76 @@
+{
+    "head": {
+        "shop": "storefront-catalog-en",
+        "shop_display_name": "Fossil en-SG",
+        "locale": "en-SG",
+        "is_master": false,
+        "searchable_attributes": [
+            {
+                "name": "product_id",
+                "path": "$.product_id",
+                "weight": 10
+            },
+            {
+                "name": "upc",
+                "path": "$.external_identifiers[?(@.type == 'upc')].value",
+                "weight": 5
+            },
+            {
+                "name": "sku",
+                "path": "$.external_identifiers[?(@.type == 'sku')].value",
+                "weight": 1
+            }
+        ]
+    },
+    "items": [
+        {
+            "product_id": "FTW9999",
+            "variant_group_id": "TESTATRIBUTE",
+            "title": "Test Extend Attribute",
+            "caption": "Test Extend Attribute",
+            "description": "Test Extend Attribute",
+            "show_in_listing": true,
+            "online_to": "2030-04-28T07:00:00Z",
+            "images": [
+                {
+                    "url": "https://fossil.scene7.com/is/image/FossilPartners/FSEGC_main?$sfcc_fos_medium$",
+                    "is_main": true
+                }
+            ],
+            "categories": [],
+            "material": "Plastic",
+            "country_of_origin": "CN",
+            "product_hts_number": "6204.49.1000",
+            "shipping_weight_value": 0.10,
+            "shipping_weight_unit": "lb",
+            "shipping_dimension_length": 1,
+            "shipping_dimension_width": 1,
+            "shipping_dimension_height": 1,
+            "shipping_dimension_unit": "in",
+            "variation_color_value": "Green",
+          
+            "variation_size_type": "regular",
+            "variation_size_system": "US",
+            "external_identifiers": [
+                {
+                    "type": "sku",
+                    "value": "FTW9999"
+                },
+                {
+                    "type": "upc",
+                    "value": "FTW9999"
+                }
+            ],
+            "extended_attributes": [
+                {
+                    "name": "final_sale",
+                    "value": "true"
+                },
+				{
+					"name": "another_extend",
+                    "value": "value extend"
+				}
+            ]
+        }
+    ]
+}
